@@ -78,9 +78,9 @@ for i in np.arange(len(datelst)):
         path101 = '/local1/storage/data/BRDF2015/e4ftl01.cr.usgs.gov/MOTA/MCD43A4.006/'+str(yearid)+".0"+str(monthid)+"."+datestrlst[i]
     else:
         path101 = '/local1/storage/data/BRDF2015/e4ftl01.cr.usgs.gov/MOTA/MCD43A4.006/'+str(yearid)+"."+str(monthid)+"."+datestrlst[i]
-    files101= os.listdir(path101) #得到文件夹下的所有文件名称  
+    files101= os.listdir(path101) #obtain all file names in folder 
     dic101 = {}  
-    for file in files101: #遍历文件夹 
+    for file in files101: #Traversing folder
         if not os.path.isdir(file):
             idnum=file.split('.')
             keyname=idnum[2]
@@ -1212,13 +1212,13 @@ np.save('/local/workdir/Yu/workdir1015/201508a/predict/OCO2_RSIF_ann.npy',sif_an
     
 ################################################################################################to nc
 #################################################################################################
+#lon limits
 l1=-180
 l2=180
 #lat limits
 r1=-90
 r2=90
 
-#lablelocation:left right,top,bottom
 nlats=3600
 nlons=7200
 #nlats=1200

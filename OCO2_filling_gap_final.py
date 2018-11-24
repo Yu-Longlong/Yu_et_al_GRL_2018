@@ -20,8 +20,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPRegressor
 import scipy
 #please adjust the file systerm before running
-#This script is for every 16 days 
-#here take 201508a as an example
+#This script is for every 16 days prediciton
+#here take the first 16 days of August,2015 as an example
 ################################################################################
 #extracting training samples
 names = locals()

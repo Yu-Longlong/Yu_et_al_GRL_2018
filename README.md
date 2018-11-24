@@ -4,4 +4,4 @@ code for Yu_et_al_GRL_2018
     was developed using machine learning and physiological constraints.
 2.please adjust the file systerm before running
 3.include data extracting, training and pediction.
-4. For more details, please check the GRL paper(under review) 
+5. For more details, please check the GRL paper(under review) 
